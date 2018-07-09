@@ -1,0 +1,5 @@
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\ifStatementExercises\bin\Debug\ifStatementExercises.exe.config
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\ifStatementExercises\bin\Debug\ifStatementExercises.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\ifStatementExercises\bin\Debug\ifStatementExercises.pdb
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\ifStatementExercises\obj\Debug\ifStatementExercises.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\ifStatementExercises\obj\Debug\ifStatementExercises.pdb

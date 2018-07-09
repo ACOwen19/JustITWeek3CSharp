@@ -1,0 +1,9 @@
+C:\Users\student\Documents\JITACO\justITWeek3C#\helloWorld\helloWorld\bin\Debug\helloWorld.exe.config
+C:\Users\student\Documents\JITACO\justITWeek3C#\helloWorld\helloWorld\bin\Debug\helloWorld.exe
+C:\Users\student\Documents\JITACO\justITWeek3C#\helloWorld\helloWorld\bin\Debug\helloWorld.pdb
+C:\Users\student\Documents\JITACO\justITWeek3C#\helloWorld\helloWorld\obj\Debug\helloWorld.csprojResolveAssemblyReference.cache
+C:\Users\student\Documents\JITACO\justITWeek3C#\helloWorld\helloWorld\obj\Debug\helloWorld.exe
+C:\Users\student\Documents\JITACO\justITWeek3C#\helloWorld\helloWorld\obj\Debug\helloWorld.pdb
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\helloWorld\helloWorld\bin\Debug\helloWorld.exe.config
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\helloWorld\helloWorld\obj\Debug\helloWorld.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\helloWorld\helloWorld\obj\Debug\helloWorld.pdb

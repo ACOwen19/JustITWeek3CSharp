@@ -1,0 +1,6 @@
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\whileAndDoWhileExercises\bin\Debug\whileAndDoWhileExercises.exe.config
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\whileAndDoWhileExercises\bin\Debug\whileAndDoWhileExercises.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\whileAndDoWhileExercises\bin\Debug\whileAndDoWhileExercises.pdb
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\whileAndDoWhileExercises\obj\Debug\whileAndDoWhileExercises.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\whileAndDoWhileExercises\obj\Debug\whileAndDoWhileExercises.pdb
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\whileAndDoWhileExercises\obj\Debug\whileAndDoWhileExercises.csprojResolveAssemblyReference.cache

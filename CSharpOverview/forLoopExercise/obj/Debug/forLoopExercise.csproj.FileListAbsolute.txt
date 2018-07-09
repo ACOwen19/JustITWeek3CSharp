@@ -1,0 +1,6 @@
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\forLoopExercise\bin\Debug\forLoopExercise.exe.config
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\forLoopExercise\bin\Debug\forLoopExercise.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\forLoopExercise\bin\Debug\forLoopExercise.pdb
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\forLoopExercise\obj\Debug\forLoopExercise.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\forLoopExercise\obj\Debug\forLoopExercise.pdb
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\forLoopExercise\obj\Debug\forLoopExercise.csprojResolveAssemblyReference.cache

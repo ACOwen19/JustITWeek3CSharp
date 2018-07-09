@@ -1,0 +1,6 @@
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\switchStatementExercises\bin\Debug\switchStatementExercises.exe.config
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\switchStatementExercises\bin\Debug\switchStatementExercises.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\switchStatementExercises\bin\Debug\switchStatementExercises.pdb
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\switchStatementExercises\obj\Debug\switchStatementExercises.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\switchStatementExercises\obj\Debug\switchStatementExercises.pdb
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\switchStatementExercises\obj\Debug\switchStatementExercises.csprojResolveAssemblyReference.cache
