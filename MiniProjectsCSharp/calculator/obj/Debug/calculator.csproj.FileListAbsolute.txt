@@ -4,3 +4,8 @@ C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\calculator\
 C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\calculator\bin\Debug\calculator.pdb
 C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\calculator\obj\Debug\calculator.exe
 C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\calculator\obj\Debug\calculator.pdb
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\calculator\bin\Debug\calculator.exe.config
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\calculator\obj\Debug\calculator.exe
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\calculator\obj\Debug\calculator.pdb
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\calculator\bin\Debug\calculator.exe
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\calculator\bin\Debug\calculator.pdb

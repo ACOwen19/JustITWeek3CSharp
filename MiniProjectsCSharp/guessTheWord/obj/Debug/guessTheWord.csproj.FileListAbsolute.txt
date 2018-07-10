@@ -1,0 +1,6 @@
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\guessTheWord\bin\Debug\guessTheWord.exe.config
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\guessTheWord\bin\Debug\guessTheWord.exe
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\guessTheWord\bin\Debug\guessTheWord.pdb
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\guessTheWord\obj\Debug\guessTheWord.exe
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\guessTheWord\obj\Debug\guessTheWord.pdb
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\guessTheWord\obj\Debug\guessTheWord.csprojResolveAssemblyReference.cache

@@ -3,3 +3,9 @@ C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\readingList
 C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\readingList\bin\Debug\readingList.pdb
 C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\readingList\obj\Debug\readingList.exe
 C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\readingList\obj\Debug\readingList.pdb
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\readingList\bin\Debug\readingList.exe.config
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\readingList\obj\Debug\readingList.exe
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\readingList\obj\Debug\readingList.pdb
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\readingList\obj\Debug\readingList.csprojResolveAssemblyReference.cache
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\readingList\bin\Debug\readingList.exe
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\MiniProjectsCSharp\readingList\bin\Debug\readingList.pdb

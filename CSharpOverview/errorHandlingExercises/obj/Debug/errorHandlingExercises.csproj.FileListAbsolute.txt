@@ -3,3 +3,6 @@ C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\errorHandlingEx
 C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\errorHandlingExercises\bin\Debug\errorHandlingExercises.pdb
 C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\errorHandlingExercises\obj\Debug\errorHandlingExercises.exe
 C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\errorHandlingExercises\obj\Debug\errorHandlingExercises.pdb
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\CSharpOverview\errorHandlingExercises\bin\Debug\errorHandlingExercises.exe.config
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\CSharpOverview\errorHandlingExercises\obj\Debug\errorHandlingExercises.exe
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\CSharpOverview\errorHandlingExercises\obj\Debug\errorHandlingExercises.pdb
