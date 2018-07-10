@@ -1,0 +1,5 @@
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\readingList\bin\Debug\readingList.exe.config
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\readingList\bin\Debug\readingList.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\readingList\bin\Debug\readingList.pdb
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\readingList\obj\Debug\readingList.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\readingList\obj\Debug\readingList.pdb

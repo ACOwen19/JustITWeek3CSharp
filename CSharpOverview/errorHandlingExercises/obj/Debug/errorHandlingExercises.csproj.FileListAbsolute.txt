@@ -1,0 +1,5 @@
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\errorHandlingExercises\bin\Debug\errorHandlingExercises.exe.config
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\errorHandlingExercises\bin\Debug\errorHandlingExercises.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\errorHandlingExercises\bin\Debug\errorHandlingExercises.pdb
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\errorHandlingExercises\obj\Debug\errorHandlingExercises.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\errorHandlingExercises\obj\Debug\errorHandlingExercises.pdb

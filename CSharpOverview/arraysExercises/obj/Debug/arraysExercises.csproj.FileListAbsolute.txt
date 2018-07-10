@@ -1,0 +1,6 @@
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\arraysExercises\bin\Debug\arraysExercises.exe.config
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\arraysExercises\bin\Debug\arraysExercises.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\arraysExercises\bin\Debug\arraysExercises.pdb
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\arraysExercises\obj\Debug\arraysExercises.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\arraysExercises\obj\Debug\arraysExercises.pdb
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\arraysExercises\obj\Debug\arraysExercises.csprojResolveAssemblyReference.cache

@@ -1,0 +1,6 @@
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\collectionsAndListsExercises\bin\Debug\collectionsAndListsExercises.exe.config
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\collectionsAndListsExercises\bin\Debug\collectionsAndListsExercises.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\collectionsAndListsExercises\bin\Debug\collectionsAndListsExercises.pdb
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\collectionsAndListsExercises\obj\Debug\collectionsAndListsExercises.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\collectionsAndListsExercises\obj\Debug\collectionsAndListsExercises.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\collectionsAndListsExercises\obj\Debug\collectionsAndListsExercises.pdb

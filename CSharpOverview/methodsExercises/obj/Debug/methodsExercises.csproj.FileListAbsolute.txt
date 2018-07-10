@@ -1,0 +1,5 @@
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\methodsExercises\bin\Debug\methodsExercises.exe.config
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\methodsExercises\bin\Debug\methodsExercises.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\methodsExercises\bin\Debug\methodsExercises.pdb
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\methodsExercises\obj\Debug\methodsExercises.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\CSharpOverview\methodsExercises\obj\Debug\methodsExercises.pdb

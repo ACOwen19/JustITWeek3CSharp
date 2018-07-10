@@ -10,9 +10,9 @@ namespace whileAndDoWhileExercises
     {
         static bool correctEntry = false;
 
-        public static int guessChecker(int guesses)
+        public static int GuessChecker(int guesses)
         {
-            if (guesses == 2)
+            if (guesses == 3)
             {
                 Console.WriteLine("Sorry, you ran out of guesses");
             }
@@ -26,7 +26,7 @@ namespace whileAndDoWhileExercises
                 guesses++;
                 Console.WriteLine("Well Done! You got it in " + guesses + "!");
             }
-            
+
             correctEntry = false;
 
             guesses = 0;
@@ -38,7 +38,7 @@ namespace whileAndDoWhileExercises
         static void Main(string[] args)
         {
 
-         
+
             string answerOneA = "EGG";
             string answerOneB = "EGGS";
 
@@ -48,7 +48,6 @@ namespace whileAndDoWhileExercises
             string answerThreeA = "FISH";
             string answerThreeB = "FISHES";
 
-            
 
             int guesses = 0;
             int score = 0;
@@ -60,12 +59,12 @@ namespace whileAndDoWhileExercises
 
             string userAnswer = Console.ReadLine().ToUpper();
 
-            while (correctEntry == false && guesses < 2)
+            while (correctEntry == false && guesses < 3)
             {
                 if (userAnswer == "QUIT")
                 {
                     guesses = 5;
-                   }
+                }
                 else
                 {
                     if (userAnswer == answerOneA || userAnswer == answerOneB)
@@ -73,35 +72,26 @@ namespace whileAndDoWhileExercises
                         correctEntry = true;
                         score++;
                     }
-                    
-                    else {
+
+                    else
+                    {
                         guesses++;
-                        Console.WriteLine("Try again! Guesses remaining: " + (3 - guesses));
-                        Console.WriteLine("Enter your guess");
-                        userAnswer = Console.ReadLine().ToUpper();
+                        if (guesses == 3)
+                        {
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("Try again! Guesses remaining: " + (3 - guesses));
+                            Console.WriteLine("Enter your guess");
+                            userAnswer = Console.ReadLine().ToUpper();
+                        }
 
                     }
                 }
             }
 
-            guesses = guessChecker(guesses);
-
-            //if (guesses == 2)
-            //{
-            //    Console.WriteLine("Sorry, you ran out of guesses");
-            //}
-
-            //else if (guesses == 5)
-            //{
-            //    Console.WriteLine("You gave up on this one.");
-            //}
-            //else
-            //{
-            //    guesses++;
-            //    Console.WriteLine("Well Done! You got it in " + guesses + "!");
-            //}
-            //guesses = 0;
-            //correctEntry = false;
+            guesses = GuessChecker(guesses);
 
             Console.WriteLine();
             Console.WriteLine("If you thought that one was tricky try this:");
@@ -118,8 +108,8 @@ namespace whileAndDoWhileExercises
 
                 if (userAnswer == "QUIT")
                 {
-                    guesses = 5;                    
-                   }
+                    guesses = 5;
+                }
 
                 else if (userAnswer == answerTwoA || userAnswer == answerTwoB)
                 {
@@ -129,29 +119,20 @@ namespace whileAndDoWhileExercises
 
                 else
                 {
-                guesses++;
-                    Console.WriteLine("Try again! Guesses remaining: " + (3 - guesses));
+                    guesses++;
+                    if (guesses == 3)
+                    {
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Try again! Guesses remaining: " + (3 - guesses));
+                    }
                 }
-            } while (correctEntry == false && guesses < 2);
+            } while (correctEntry == false && guesses < 3);
 
-           // guessChecker();
+            guesses = GuessChecker(guesses);
 
-            if (guesses == 2)
-            {
-                Console.WriteLine("Sorry, you ran out of guesses");
-            }
-
-            else if (guesses == 5)
-            {
-                Console.WriteLine("You gave up on this one.");
-            }
-            else
-            {
-                guesses++;
-                Console.WriteLine("Well Done! You got it in " + guesses + "!");
-            }
-            guesses = 0;
-            correctEntry = false;
 
             Console.WriteLine();
             Console.WriteLine("Now for the final challenge:");
@@ -180,28 +161,19 @@ namespace whileAndDoWhileExercises
                 else
                 {
                     guesses++;
-                    Console.WriteLine("Try again! Guesses remaining: " + (3 - guesses));
+                    if (guesses == 3)
+                    {
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Try again! Guesses remaining: " + (3 - guesses));
+                    }
                 }
-            } while (correctEntry == false && guesses < 2);
+            } while (correctEntry == false && guesses < 3);
 
-            // guessChecker();
+            guesses = GuessChecker(guesses);
 
-            if (guesses == 2)
-            {
-                Console.WriteLine("Sorry, you ran out of guesses");
-            }
-
-            else if (guesses == 5)
-            {
-                Console.WriteLine("You gave up on this one.");
-            }
-            else
-            {
-                guesses++;
-                Console.WriteLine("Well Done! You got it in " + guesses + "!");
-            }
-            guesses = 0;
-            correctEntry = false;
 
 
             Console.WriteLine("Your final score is " + score + "/3");
