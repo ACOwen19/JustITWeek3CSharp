@@ -1,0 +1,6 @@
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\ObjectOrientationExercises\encapsulationExercise\bin\Debug\encapsulationExercise.exe.config
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\ObjectOrientationExercises\encapsulationExercise\bin\Debug\encapsulationExercise.exe
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\ObjectOrientationExercises\encapsulationExercise\bin\Debug\encapsulationExercise.pdb
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\ObjectOrientationExercises\encapsulationExercise\obj\Debug\encapsulationExercise.csprojResolveAssemblyReference.cache
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\ObjectOrientationExercises\encapsulationExercise\obj\Debug\encapsulationExercise.exe
+C:\Users\archi\Documents\GitHub\JustITWeek3CSharp\ObjectOrientationExercises\encapsulationExercise\obj\Debug\encapsulationExercise.pdb

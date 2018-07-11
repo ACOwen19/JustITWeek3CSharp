@@ -1,0 +1,21 @@
+Car Features:
+Make
+Model
+Price
+Doors
+Engine Size
+Transmission
+Size
+Top Speed
+Drive-type
+
+Rental Sales System:
+Make
+Model
+Doors
+Engine Size
+Transmission
+Size
+Price per day
+Days Rental
+Drive Type

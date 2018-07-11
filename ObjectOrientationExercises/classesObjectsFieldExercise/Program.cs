@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace classesObjectsFieldExercise
 {
 
-    class Car
+    class Vehicle
     {
         public string make;
         public string model;
@@ -15,12 +15,13 @@ namespace classesObjectsFieldExercise
         public int price;
         public bool sold;
         public int doors;
-        //public static List<Car> allStock = new List<Car>();
+        public string vehicleType;
+        //public static List<Vehicle> allStock = new List<Vehicle>();
         // DON'T Try to manage the class within the class
         public static int stock = 0;
         public static int salesTotal = 0;
 
-        public Car(string make, string model, int price)
+        public Vehicle(string make, string model, int price)
         {
             this.make = make;
             this.model = model;
@@ -30,10 +31,10 @@ namespace classesObjectsFieldExercise
             turbo = false;
             //allStock.Add(this);
             // DON'T Try to manage
-            Car.stock += 1;
+            Vehicle.stock += 1;
         }
 
-        public Car(string make, string model, int price, string hasTurbo)
+        public Vehicle(string make, string model, int price, string hasTurbo)
         {
             this.make = make;
             this.model = model;
@@ -41,9 +42,9 @@ namespace classesObjectsFieldExercise
             turbo = true;
             this.doors = 4;
             sold = false;
-            Car.stock += 1;
+            Vehicle.stock += 1;
         }
-        public Car(string make, string model, int price, int doors)
+        public Vehicle(string make, string model, int price, int doors)
         {
             this.make = make;
             this.model = model;
@@ -51,47 +52,98 @@ namespace classesObjectsFieldExercise
             turbo = false;
             this.doors = doors;
             sold = false;
-            Car.stock += 1;
+            Vehicle.stock += 1;
         }
 
 
-        public void DisplayCar()
+        public void DisplayVehicle()
         {
-            Console.WriteLine("Make: {0} Model: {1} Price: £{2} Turbo: {3} Doors: {4}", make, model, price, turbo, doors);
+            Console.WriteLine("Type: {5} Make: {0} Model: {1} Price: £{2} Turbo: {3} Doors: {4}", make, model, price, turbo, doors, vehicleType);
         }
 
-        public void SellCar()
+        public void SellVehicle()
         {
             sold = true;
+            Vehicle.stock -= 1;
         }
 
-        public static void DisplayAvailableStock(List<Car> allStock)
+        public static void DisplayAvailableStock(List<Vehicle> allStock)
         {
-            for (int i = 0; i<allStock.Count; i += 1)
+            Console.WriteLine("We have " + Vehicle.stock + " Vehicles in stock:");
+
+            for (int i = 0; i < allStock.Count; i += 1)
             {
                 if (allStock[i].sold == false)
                 {
-                    allStock[i].DisplayCar();
+                    allStock[i].DisplayVehicle();
                 }
             }
         }
 
-        public static void TotalSales(List<Car> allStock)
+        public static void TotalSales(List<Vehicle> allStock)
         {
             for (int i = 0; i < allStock.Count; i += 1)
             {
-               
+
                 if (allStock[i].sold == true)
                 {
                     salesTotal += allStock[i].price;
                 }
             }
-            Console.WriteLine("We have sold £{0} worth of cars",salesTotal);
+            Console.WriteLine("We have sold £{0} worth of Vehicles", salesTotal);
+        }
+    }
+        
+class Car : Vehicle
+        {
+            public static int carCount;
+            
+
+        public Car(string make, string model, int price) : base (make, model, price)
+            {
+                vehicleType = "Car";
+                carCount += 1;            
+            }
+
+        public Car(string make, string model, int price, string hasTurbo) : base(make, model, price, hasTurbo)
+        {
+            vehicleType = "Car";
+            carCount += 1;
         }
 
-    }
+        public Car(string make, string model, int price, int doors) : base(make, model, price, doors)
+        {
+           vehicleType = "Car";
+            carCount += 1;
+        }
 
-    
+      }
+
+    class Motorcycle : Vehicle
+    {
+        public static int bikeCount;
+
+
+        public Motorcycle(string make, string model, int price) : base (make, model, price)
+            {
+            vehicleType = "Motorcycle";
+            this.doors = 0;
+            bikeCount += 1;
+        }
+
+        public Motorcycle(string make, string model, int price, string hasTurbo) : base(make, model, price, hasTurbo)
+        {
+            vehicleType = "Motorcycle";
+            bikeCount += 1;
+        }
+
+        public Motorcycle(string make, string model, int price, int doors) : base(make, model, price, doors)
+        {
+            vehicleType = "Motorcycle";
+            this.doors = 0;
+            bikeCount += 1;
+        }
+    }
 
 
     class Program
@@ -99,41 +151,45 @@ namespace classesObjectsFieldExercise
         static void Main(string[] args)
         {
 
-            List<Car> allStock = new List<Car>();
+            List<Vehicle> allStock = new List<Vehicle>();
 
-            Car A5TNMTN = new Car("Aston Martin", "DB9", 75000, 2);
+            Vehicle A5TNMTN = new Car("Aston Martin", "DB9", 75000, 2);
             //A5TNMTN.make = "Aston Martin";
             //A5TNMTN.model = "DB9";
             //A5TNMTN.price = 75000;
             //A5TNMTN.sold = false;
-            //Car.stock += 1;
+            //Vehicle.stock += 1;
             allStock.Add(A5TNMTN);
             
 
-            Car RENAU1T = new Car("Renault", "Clio", 2500);
-            //RENAU1T.AddCar("Renault", "Clio", 2500);
+            Vehicle RENAU1T = new Car("Renault", "Clio", 2500);
+            //RENAU1T.AddVehicle("Renault", "Clio", 2500);
             allStock.Add(RENAU1T);
                      
-            Car FOCU5R5 = new Car("Ford", "Focus RS", 20000, "Turbo");
-            //FOCU5R5.AddCar("Ford", "Focus RS", 20000);
+            Vehicle FOCU5R5 = new Car("Ford", "Focus RS", 20000, "Turbo");
+            //FOCU5R5.AddVehicle("Ford", "Focus RS", 20000);
             allStock.Add(FOCU5R5);
 
-            Car MRCACL5 = new Car("Mercedes", "A Class", 30000);
-            //MRCACL5.AddCar("Mercedes","A Class", 30000);
+            Vehicle MRCACL5 = new Car("Mercedes", "A Class", 30000);
+            //MRCACL5.AddVehicle("Mercedes","A Class", 30000);
             allStock.Add(MRCACL5);
 
-            Console.WriteLine("We have " + Car.stock + " cars in stock:");
-            //Console.WriteLine("Make: {0} Model: {1} Price: £{2}", A5TNMTN.make, A5TNMTN.model, A5TNMTN.price);
-            //A5TNMTN.DisplayCar();
-            //RENAU1T.DisplayCar();
-            //FOCU5R5.DisplayCar();
-            //MRCACL5.DisplayCar();
+            Vehicle HNDABKE = new Motorcycle("Honda", "Superbike", 50000);
+           allStock.Add(HNDABKE);
 
-            Car.DisplayAvailableStock(allStock);
-            Car.TotalSales(allStock);
-            MRCACL5.SellCar();
-            Car.DisplayAvailableStock(allStock);
-            Car.TotalSales(allStock);
+            //Console.WriteLine("We have " + Vehicle.stock + " Vehicles in stock:");
+            //Console.WriteLine("Make: {0} Model: {1} Price: £{2}", A5TNMTN.make, A5TNMTN.model, A5TNMTN.price);
+            //A5TNMTN.DisplayVehicle();
+            //RENAU1T.DisplayVehicle();
+            //FOCU5R5.DisplayVehicle();
+            //MRCACL5.DisplayVehicle();
+
+            Vehicle.DisplayAvailableStock(allStock);
+            Vehicle.TotalSales(allStock);
+            MRCACL5.SellVehicle();
+            HNDABKE.SellVehicle();
+            Vehicle.DisplayAvailableStock(allStock);
+            Vehicle.TotalSales(allStock);
 
 
 
