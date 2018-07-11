@@ -1,0 +1,6 @@
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\housePriceCalculator\bin\Debug\housePriceCalculator.exe.config
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\housePriceCalculator\bin\Debug\housePriceCalculator.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\housePriceCalculator\bin\Debug\housePriceCalculator.pdb
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\housePriceCalculator\obj\Debug\housePriceCalculator.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\housePriceCalculator\obj\Debug\housePriceCalculator.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\MiniProjectsCSharp\housePriceCalculator\obj\Debug\housePriceCalculator.pdb

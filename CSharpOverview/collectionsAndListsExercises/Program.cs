@@ -99,10 +99,12 @@ namespace collectionsAndListsExercises
                         break;
                     case "display":
                         int listLength = readingList.Count;
-                        for (int i = 0; i < listLength; i += 1)
-                        {
-                            Console.WriteLine(textInfo.ToTitleCase(readingList[i]));
-                        }
+                        //for (int i = 0; i < listLength; i += 1)
+                        //{
+                        //    Console.WriteLine(textInfo.ToTitleCase(readingList[i]));
+                        //}
+
+                        readingList.ForEach(Console.WriteLine);
                         break;
                     default:
                         Console.WriteLine("That is not an option");

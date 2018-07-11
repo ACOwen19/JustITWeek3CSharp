@@ -1,0 +1,7 @@
+C:\Users\student\Documents\JITACO\justITWeek3C#\ObjectOrientationExercises\classesObjectsFieldExercise\bin\Debug\classesObjectsFieldExercise.exe.config
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\ObjectOrientationExercises\classesObjectsFieldExercise\bin\Debug\classesObjectsFieldExercise.exe.config
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\ObjectOrientationExercises\classesObjectsFieldExercise\bin\Debug\classesObjectsFieldExercise.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\ObjectOrientationExercises\classesObjectsFieldExercise\bin\Debug\classesObjectsFieldExercise.pdb
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\ObjectOrientationExercises\classesObjectsFieldExercise\obj\Debug\classesObjectsFieldExercise.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\ObjectOrientationExercises\classesObjectsFieldExercise\obj\Debug\classesObjectsFieldExercise.exe
+C:\Users\student\Desktop\JITACO\justITWeek3CSharp\ObjectOrientationExercises\classesObjectsFieldExercise\obj\Debug\classesObjectsFieldExercise.pdb
