@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "collectionsAndListsExercise
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "errorHandlingExercises", "errorHandlingExercises\errorHandlingExercises.csproj", "{A16BAFE6-1071-404D-BEF2-FCF7825B2594}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "automatedTestExcercise", "automatedTestExcercise\automatedTestExcercise.csproj", "{ED280DD8-FFB8-4119-B73D-F8321B660F9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{A16BAFE6-1071-404D-BEF2-FCF7825B2594}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A16BAFE6-1071-404D-BEF2-FCF7825B2594}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A16BAFE6-1071-404D-BEF2-FCF7825B2594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED280DD8-FFB8-4119-B73D-F8321B660F9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED280DD8-FFB8-4119-B73D-F8321B660F9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED280DD8-FFB8-4119-B73D-F8321B660F9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED280DD8-FFB8-4119-B73D-F8321B660F9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

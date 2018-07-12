@@ -90,20 +90,27 @@ namespace classesObjectsFieldExercise
                     salesTotal += allStock[i].price;
                 }
             }
-            Console.WriteLine("We have sold £{0} worth of Vehicles", salesTotal);
+            Console.WriteLine("We have sold £{0:N0} worth of Vehicles", salesTotal);
         }
-    }
-        
-class Car : Vehicle
+        // :N0 will format the number to be currency supposedly
+        public virtual void Wheels()
         {
-            public static int carCount;
-            
+            Console.WriteLine("A vehicle has a number of wheels");
+        }
 
-        public Car(string make, string model, int price) : base (make, model, price)
-            {
-                vehicleType = "Car";
-                carCount += 1;            
-            }
+
+    }
+
+    class Car : Vehicle
+    {
+        public static int carCount;
+
+
+        public Car(string make, string model, int price) : base(make, model, price)
+        {
+            vehicleType = "Car";
+            carCount += 1;
+        }
 
         public Car(string make, string model, int price, string hasTurbo) : base(make, model, price, hasTurbo)
         {
@@ -113,27 +120,62 @@ class Car : Vehicle
 
         public Car(string make, string model, int price, int doors) : base(make, model, price, doors)
         {
-           vehicleType = "Car";
+            vehicleType = "Car";
             carCount += 1;
         }
 
-      }
+        public override void Wheels()
+        {
+            Console.WriteLine("A car has 4 wheels");
+        }
+
+    }
+
+    class ThreeWheeler : Car
+    {
+
+
+        public ThreeWheeler(string make, string model, int price) : base(make, model, price)
+        {
+            vehicleType = "Car";
+            carCount += 1;
+        }
+
+        public ThreeWheeler(string make, string model, int price, string hasTurbo) : base(make, model, price, hasTurbo)
+        {
+            vehicleType = "Car";
+            carCount += 1;
+        }
+
+        public ThreeWheeler(string make, string model, int price, int doors) : base(make, model, price, doors)
+        {
+            vehicleType = "Car";
+            carCount += 1;
+        }
+
+        public override void Wheels()
+        {
+            Console.WriteLine("A Three Wheeler has 3 wheels");
+        }
+
+    }
 
     class Motorcycle : Vehicle
     {
         public static int bikeCount;
 
 
-        public Motorcycle(string make, string model, int price) : base (make, model, price)
-            {
+        public Motorcycle(string make, string model, int price) : base(make, model, price)
+        {
             vehicleType = "Motorcycle";
-            this.doors = 0;
+            doors = 0;
             bikeCount += 1;
         }
 
         public Motorcycle(string make, string model, int price, string hasTurbo) : base(make, model, price, hasTurbo)
         {
             vehicleType = "Motorcycle";
+            doors = 0;
             bikeCount += 1;
         }
 
@@ -143,7 +185,45 @@ class Car : Vehicle
             this.doors = 0;
             bikeCount += 1;
         }
+
+        public override void Wheels()
+        {
+            Console.WriteLine("A bike has 2 wheels");
+        }
     }
+
+    class HGV : Vehicle
+    {
+        public static int HGVCount;
+
+
+        public HGV(string make, string model, int price) : base(make, model, price)
+        {
+            vehicleType = "HGV";
+            doors = 2;
+            HGVCount += 1;
+        }
+
+        public HGV(string make, string model, int price, string hasTurbo) : base(make, model, price, hasTurbo)
+        {
+            vehicleType = "HGV";
+            doors = 2;
+            HGVCount += 1;
+        }
+
+        public HGV(string make, string model, int price, int doors) : base(make, model, price, doors)
+        {
+            vehicleType = "HGV";
+            this.doors = 2;
+            HGVCount += 1;
+        }
+
+        public new void Wheels()
+        {
+            Console.WriteLine("A truck has 8 wheels");
+        }
+    }
+
 
 
     class Program
@@ -160,12 +240,12 @@ class Car : Vehicle
             //A5TNMTN.sold = false;
             //Vehicle.stock += 1;
             allStock.Add(A5TNMTN);
-            
+
 
             Vehicle RENAU1T = new Car("Renault", "Clio", 2500);
             //RENAU1T.AddVehicle("Renault", "Clio", 2500);
             allStock.Add(RENAU1T);
-                     
+
             Vehicle FOCU5R5 = new Car("Ford", "Focus RS", 20000, "Turbo");
             //FOCU5R5.AddVehicle("Ford", "Focus RS", 20000);
             allStock.Add(FOCU5R5);
@@ -174,9 +254,14 @@ class Car : Vehicle
             //MRCACL5.AddVehicle("Mercedes","A Class", 30000);
             allStock.Add(MRCACL5);
 
-            Vehicle HNDABKE = new Motorcycle("Honda", "Superbike", 50000);
-           allStock.Add(HNDABKE);
+            Vehicle HNDA8KE = new Motorcycle("Honda", "Superbike", 50000);
+            allStock.Add(HNDA8KE);
 
+            Vehicle RLNTR8N = new ThreeWheeler("Reliant", "Robin", 15000);
+            allStock.Add(RLNTR8N);
+
+            HGV VOLVOFH = new HGV("Volvo", "FH", 115000);
+            allStock.Add(VOLVOFH);
             //Console.WriteLine("We have " + Vehicle.stock + " Vehicles in stock:");
             //Console.WriteLine("Make: {0} Model: {1} Price: £{2}", A5TNMTN.make, A5TNMTN.model, A5TNMTN.price);
             //A5TNMTN.DisplayVehicle();
@@ -184,10 +269,21 @@ class Car : Vehicle
             //FOCU5R5.DisplayVehicle();
             //MRCACL5.DisplayVehicle();
 
+            foreach (Vehicle v in allStock)
+            {
+                Console.WriteLine(v.GetType() + ":");
+                v.Wheels();
+            }
+            // VOLVOFH hasn't been cast as a vehicle so because we are using the new method for the HGV class 
+            // when it is called using foreach vehicle it won't call the hgv wheels method
+            // If we call the wheels method for specifically VOLVOFH because its an HGV then it will call the HGV method
+            Console.WriteLine(VOLVOFH.GetType() + ":");
+            VOLVOFH.Wheels();
+
             Vehicle.DisplayAvailableStock(allStock);
             Vehicle.TotalSales(allStock);
             MRCACL5.SellVehicle();
-            HNDABKE.SellVehicle();
+            HNDA8KE.SellVehicle();
             Vehicle.DisplayAvailableStock(allStock);
             Vehicle.TotalSales(allStock);
 

@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classesObjectsFieldExercise", "classesObjectsFieldExercise\classesObjectsFieldExercise.csproj", "{0A8C5397-00FD-43A6-8632-DBE668E05BFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classesObjectsFieldsPolymorphismExercise", "classesObjectsFieldExercise\classesObjectsFieldsPolymorphismExercise.csproj", "{0A8C5397-00FD-43A6-8632-DBE668E05BFD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "encapsulationExercise", "encapsulationExercise\encapsulationExercise.csproj", "{F48E3A0C-BE73-4891-9816-849651E1DD42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bankAccountEncapsulationExample", "bankAccountEncapsulationExample\bankAccountEncapsulationExample.csproj", "{B2159145-9AA4-4390-A42A-B7A28AF1ED1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F48E3A0C-BE73-4891-9816-849651E1DD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F48E3A0C-BE73-4891-9816-849651E1DD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F48E3A0C-BE73-4891-9816-849651E1DD42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2159145-9AA4-4390-A42A-B7A28AF1ED1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2159145-9AA4-4390-A42A-B7A28AF1ED1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2159145-9AA4-4390-A42A-B7A28AF1ED1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2159145-9AA4-4390-A42A-B7A28AF1ED1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

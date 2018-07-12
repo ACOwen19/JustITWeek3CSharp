@@ -8,8 +8,6 @@ namespace encapsulationExercise
 {
 
     // Is it better to start everything as public and then go back and encapsulate when you know what needs to be called in other classes?
-    // Question badly phrased
-    // Solution adds complexity rather than reducing it?
     // why not just have balance as a static decimal that increments everytime you cook a meal?
     // if we keep the bookeeping inside meal we can change price and cost to private
     public class Meal
@@ -31,7 +29,8 @@ namespace encapsulationExercise
     }
     public class Bookkeeping
     {
-        private static decimal balance = 0;
+        // private static decimal balance = 0;
+        public static decimal balance = 0;
         public static void processOrder(Meal meal)
         {
 
@@ -39,10 +38,10 @@ namespace encapsulationExercise
             balance = balance - meal.cost;
         }
 
-        public static decimal showBalance()
-        {
-            return balance;
-        }
+        //public static decimal showBalance()
+        //{
+        //    return balance;
+        //}
     }
     public class Order
     {
@@ -56,8 +55,6 @@ namespace encapsulationExercise
     {
         static void Main(string[] args)
         {
-            decimal balance = 0;
-            
             Meal steak = new Meal("Steak", 20.00M, 5.00M);
 
             Meal fajitas = new Meal("Fajitas", 12.00M, 2.00M);
@@ -73,8 +70,8 @@ namespace encapsulationExercise
             Meal.cookMeal(pumpkinRisotto);
             Bookkeeping.processOrder(pumpkinRisotto);
 
-            balance = Bookkeeping.showBalance();
-            Console.WriteLine("Tonight in the restaurant, we made £{0:N2}.", balance);
+            // decimal balance = Bookkeeping.showBalance();
+            Console.WriteLine("Tonight in the restaurant, we made £{0:N2}.", Bookkeeping.balance);
         }
     }
 }

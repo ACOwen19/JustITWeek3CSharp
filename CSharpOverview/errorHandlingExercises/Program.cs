@@ -25,6 +25,25 @@ namespace errorHandlingExercises
 
         }
     }
+
+    public class AutomatedTest
+    {
+        public static int CalculatorOne(int valueOne, int valueTwo)
+        {
+            int result = valueOne + valueTwo;
+            return result;
+
+        }
+
+        public static int CalculatorTwo(int valueOne, int valueTwo)
+        {
+            int result = valueOne * valueTwo;
+            return result;
+
+        }
+    }
+
+
     
     class Program
     {
@@ -89,6 +108,7 @@ namespace errorHandlingExercises
             catch (ArgumentNullException triedMes)
             {
                 Console.WriteLine("ERROR!");
+                //Console.WriteLine(triedMes.ToString());
             }
             try
             {
@@ -100,7 +120,20 @@ namespace errorHandlingExercises
                 Console.WriteLine(triedMes.ToString()); ;
             }
 
-        }
+            //---------------------DEGUGGER TEST------------------
+
+            int numOneA = 4;
+            int numTwoB = 0;
+            int resultC = 0;
+            
+            resultC = numOneA / numTwoB;
+
+            int resultD = AutomatedTest.CalculatorOne(numOneA, numTwoB);
+
+
+            Console.WriteLine(resultC);
+
+            }
 
     }
 }
