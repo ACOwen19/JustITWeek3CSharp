@@ -189,5 +189,10 @@ namespace windowsFormDemo2
         {
             Close();
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
