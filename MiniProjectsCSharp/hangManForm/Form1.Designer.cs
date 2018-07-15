@@ -103,6 +103,7 @@
             this.letterSix.TabIndex = 14;
             this.letterSix.Tag = "6";
             this.letterSix.Text = "_";
+            this.letterSix.Visible = false;
             // 
             // letterFive
             // 
@@ -113,6 +114,7 @@
             this.letterFive.TabIndex = 13;
             this.letterFive.Tag = "5";
             this.letterFive.Text = "_";
+            this.letterFive.Visible = false;
             // 
             // letterFour
             // 
@@ -123,6 +125,7 @@
             this.letterFour.TabIndex = 12;
             this.letterFour.Tag = "4";
             this.letterFour.Text = "_";
+            this.letterFour.Visible = false;
             // 
             // letterThree
             // 
@@ -133,6 +136,7 @@
             this.letterThree.TabIndex = 11;
             this.letterThree.Tag = "3";
             this.letterThree.Text = "_";
+            this.letterThree.Visible = false;
             // 
             // letterTwo
             // 
@@ -143,6 +147,7 @@
             this.letterTwo.TabIndex = 10;
             this.letterTwo.Tag = "2";
             this.letterTwo.Text = "_";
+            this.letterTwo.Visible = false;
             // 
             // letterOne
             // 
@@ -153,6 +158,7 @@
             this.letterOne.TabIndex = 9;
             this.letterOne.Tag = "1";
             this.letterOne.Text = "_";
+            this.letterOne.Visible = false;
             // 
             // panel1
             // 
@@ -208,6 +214,7 @@
             this.guessButton.TabIndex = 38;
             this.guessButton.Text = "Guess";
             this.guessButton.UseVisualStyleBackColor = true;
+            this.guessButton.Click += new System.EventHandler(this.guessButton_Click);
             // 
             // panel3
             // 
