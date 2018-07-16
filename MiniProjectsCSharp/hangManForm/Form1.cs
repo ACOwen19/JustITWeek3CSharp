@@ -27,6 +27,7 @@ namespace hangManForm
         public static char[] answerCheck = new char[wordLength];
         public static int lives = 0;
         public static bool guessCheck = false;
+        public static bool dupeCheck = false;
         public char userGuess = ' ';
         public string answerMatch = "";
 
@@ -34,6 +35,12 @@ namespace hangManForm
         {
             string answerMatch = new string(answerCheck);
             return answerMatch;
+        }
+
+        static bool CheckDupe(string guesses, string guess)
+        {
+            bool output = guesses.Contains(guess);
+            return output;
         }
 
         private void startButton_Click(object sender, EventArgs e)
@@ -51,7 +58,6 @@ namespace hangManForm
                 }
             }
 
-
         }
 
         private void guessButton_Click(object sender, EventArgs e)
@@ -63,15 +69,25 @@ namespace hangManForm
                 if (userGuess == answerChars[i])
                 {
                     guessCheck = true;
-                    answerCheck[i] = answerChars[i];
-                    foreach (Control labels in panel2.Controls)
+
+                    if (userGuess == answerCheck[i])
                     {
-                        if (Convert.ToInt32(labels.Tag) == i + 1)
-                        {
-                            labels.Text = Convert.ToString(answerChars[i]);
-                        }
+                        dupeCheck = true;
                     }
 
+                    else
+                    {
+
+                        answerCheck[i] = answerChars[i];
+
+                        foreach (Control labels in panel2.Controls)
+                        {
+                            if (Convert.ToInt32(labels.Tag) == i + 1)
+                            {
+                                labels.Text = Convert.ToString(answerChars[i]);
+                            }
+                        }
+                    }
                 }
             }
             if (guessCheck == true)
@@ -85,7 +101,16 @@ namespace hangManForm
                     feedback.Text = "\u00fc";
                     guessCheck = false;
                     guessButton.Enabled = false;
+                    startButton.Visible = false;
+                    closeButton.Visible = true;
+
                 }
+                else if (dupeCheck)
+                {
+                    Result.Text = "You already guessed that one";
+                    dupeCheck = false;
+                }
+
                 else
                 {
                     Result.Text = "Well Done! Keep Guessing";
@@ -95,51 +120,77 @@ namespace hangManForm
                 }
             }
 
+
+
+
+
             else
             {
-                lives += 1;
 
-                if (lives == 1)
+                dupeCheck = CheckDupe(wrongGuess.Text, guess.Text);
+                if (dupeCheck)
                 {
-                    head.Visible = true;
-                    Result.Text = "Incorrect, guess again";
-                    feedback.ForeColor = Color.Red;
-                    feedback.Text = "\u00fb";
-                }
-                else if (lives == 2)
-                {
-                    body.Visible = true;
-                    Result.Text = "Incorrect, guess again";
-                    feedback.ForeColor = Color.Red;
-                    feedback.Text = "\u00fb";
-                }
-                else if (lives == 3)
-                {
-                    armOne.Visible = true;
-                    Result.Text = "Incorrect, guess again";
-                    feedback.ForeColor = Color.Red;
-                    feedback.Text = "\u00fb";
-                }
-                else if (lives == 4)
-                {
-                    armTwo.Visible = true;
-                    Result.Text = "Incorrect, guess again";
-                    feedback.ForeColor = Color.Red;
-                    feedback.Text = "\u00fb";
+                    Result.Text = "You already guessed that one";
+
                 }
 
-                else if (lives == 5)
+                else
                 {
-                    legs.Visible = true;
-                    guessButton.Enabled = false;
-                    Result.Text = "You lost, the word was " + answer;
-                    feedback.ForeColor = Color.PaleVioletRed;
-                    feedback.Text = "\u00fb";
-                }
+                    lives += 1;
 
+                    wrongGuess.Text += guess.Text + " ";
+
+                    if (lives == 1)
+                    {
+                        head.Visible = true;
+                        Result.Text = "Incorrect, guess again";
+                        feedback.ForeColor = Color.Red;
+                        feedback.Text = "\u00fb";
+                    }
+                    else if (lives == 2)
+                    {
+                        body.Visible = true;
+                        Result.Text = "Incorrect, guess again";
+                        feedback.ForeColor = Color.Red;
+                        feedback.Text = "\u00fb";
+                    }
+                    else if (lives == 3)
+                    {
+                        armOne.Visible = true;
+                        Result.Text = "Incorrect, guess again";
+                        feedback.ForeColor = Color.Red;
+                        feedback.Text = "\u00fb";
+                    }
+                    else if (lives == 4)
+                    {
+                        armTwo.Visible = true;
+                        Result.Text = "Incorrect, guess again";
+                        feedback.ForeColor = Color.Red;
+                        feedback.Text = "\u00fb";
+                    }
+
+                    else if (lives == 5)
+                    {
+                        legs.Visible = true;
+                        guessButton.Enabled = false;
+                        Result.Text = "You lost, the word was " + answer;
+                        feedback.ForeColor = Color.PaleVioletRed;
+                        feedback.Text = "\u00fb";
+                        startButton.Visible = false;
+                        closeButton.Visible = true;
+                    }
+                    else
+                    {
+                        Result.Text = "ERROR";
+                    }
+                }
             }
 
+        }
 
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

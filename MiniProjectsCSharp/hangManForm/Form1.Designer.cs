@@ -51,6 +51,9 @@
             this.body = new System.Windows.Forms.PictureBox();
             this.head = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.wrongGuess = new System.Windows.Forms.Label();
+            this.closeButton = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -162,6 +165,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.wrongGuess);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.feedback);
             this.panel1.Controls.Add(this.Result);
             this.panel1.Controls.Add(this.label1);
@@ -185,7 +190,7 @@
             // Result
             // 
             this.Result.AutoSize = true;
-            this.Result.Location = new System.Drawing.Point(86, 81);
+            this.Result.Location = new System.Drawing.Point(80, 80);
             this.Result.Name = "Result";
             this.Result.Size = new System.Drawing.Size(0, 13);
             this.Result.TabIndex = 41;
@@ -235,7 +240,7 @@
             this.armTwo.Image = ((System.Drawing.Image)(resources.GetObject("armTwo.Image")));
             this.armTwo.Location = new System.Drawing.Point(232, 88);
             this.armTwo.Name = "armTwo";
-            this.armTwo.Size = new System.Drawing.Size(53, 20);
+            this.armTwo.Size = new System.Drawing.Size(53, 18);
             this.armTwo.TabIndex = 48;
             this.armTwo.TabStop = false;
             this.armTwo.Visible = false;
@@ -255,7 +260,7 @@
             this.legs.Image = ((System.Drawing.Image)(resources.GetObject("legs.Image")));
             this.legs.Location = new System.Drawing.Point(175, 163);
             this.legs.Name = "legs";
-            this.legs.Size = new System.Drawing.Size(87, 55);
+            this.legs.Size = new System.Drawing.Size(78, 55);
             this.legs.TabIndex = 46;
             this.legs.TabStop = false;
             this.legs.Visible = false;
@@ -265,7 +270,7 @@
             this.body.Image = ((System.Drawing.Image)(resources.GetObject("body.Image")));
             this.body.Location = new System.Drawing.Point(203, 87);
             this.body.Name = "body";
-            this.body.Size = new System.Drawing.Size(28, 78);
+            this.body.Size = new System.Drawing.Size(28, 72);
             this.body.TabIndex = 45;
             this.body.TabStop = false;
             this.body.Visible = false;
@@ -289,11 +294,40 @@
             this.pictureBox1.TabIndex = 43;
             this.pictureBox1.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 13);
+            this.label3.TabIndex = 43;
+            this.label3.Text = "Guesses:";
+            // 
+            // wrongGuess
+            // 
+            this.wrongGuess.AutoSize = true;
+            this.wrongGuess.Location = new System.Drawing.Point(8, 55);
+            this.wrongGuess.Name = "wrongGuess";
+            this.wrongGuess.Size = new System.Drawing.Size(0, 13);
+            this.wrongGuess.TabIndex = 44;
+            // 
+            // closeButton
+            // 
+            this.closeButton.Location = new System.Drawing.Point(139, 34);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(84, 28);
+            this.closeButton.TabIndex = 46;
+            this.closeButton.Text = "Close";
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Visible = false;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
             // Hangman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(367, 455);
+            this.Controls.Add(this.closeButton);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -340,6 +374,9 @@
         private System.Windows.Forms.PictureBox body;
         private System.Windows.Forms.PictureBox head;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label wrongGuess;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button closeButton;
     }
 }
 
